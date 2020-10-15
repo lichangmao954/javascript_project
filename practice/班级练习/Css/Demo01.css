@@ -1,0 +1,88 @@
+.outer-wrapper{
+    width: 800px;
+    height:800px;
+    background-image: url(/practice/班级练习/img/bg.jpg);
+    /*设置背景图片是否重复*/
+    background-repeat: no-repeat;
+    margin: 50px 250px;
+    position: relative;
+}
+
+.tro{
+    display: block;
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top:750px;
+
+}
+.inter-wrapper{
+    width: 600px;
+    height: 700px;
+    background-color: rgba(244,247, 246,.6);
+    border-radius: 16px;
+    position: absolute;
+    left: 100px;
+    top:20px;
+
+}
+
+.inter-wrapper .log{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(/practice/班级练习/img/logo.png);
+    background-size: cover;
+    left: 140px;
+}
+
+.title{
+position: absolute;
+    font-size: 25px;
+   left: 260px;
+   top:50px;
+}
+.user{
+   position: absolute;
+}
+form {
+    width: 500px;
+    text-align: center;
+    padding-top: 110px;
+    margin-left: 50px;
+}
+form input {
+    width: 250px;
+}
+.line{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    color: black;
+}
+.btn{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top:620px;
+    border-top: solid 1px black;
+
+}
+
+.btn button{
+    position: relative;
+    left: 200px;
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: #6666;
+    border: none;
+    border-radius: 13px;
+}
+button{
+    width: 90px;
+    
+}
+.sex{
+   width: 120px;
+}

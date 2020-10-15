@@ -1,0 +1,63 @@
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+
+    }
+
+    .box1 {
+
+        border: 10px solid blue;
+
+        float: left;
+        margin-left: 400px;
+        position: relative;
+        left: 53px;
+
+
+
+    }
+
+    .box2 {
+
+        border: 10px solid black;
+        float: left;
+        position: relative;
+        left: 50px;
+
+
+
+
+    }
+
+    .box3 {
+
+        border: 10px solid red;
+        float: left;
+        position: relative;
+        left: 50px;
+
+    }
+
+    .box4 {
+
+        border: 10px solid yellow;
+        clear: both;
+        position: relative;
+        left: 560px;
+        top: -130px;
+    }
+
+    .box5 {
+
+        border: 10px solid green;
+        clear: both;
+        position: relative;
+        left: 780px;
+        top: -350px;
+    }

@@ -1,0 +1,411 @@
+body{
+
+    /* 设置字体 */
+    font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+}
+.top{
+    width: 100%;
+    height: 80px;
+    background-color:#1482c1 ;
+    background-size: cover;
+}
+/*设置图片最上面图片容器的样式*/
+.one{
+    width: 1190px;
+    height: 80px;
+    margin: 0px 165px 0px 159px;
+    position: relative;
+    
+}
+.one i{
+    margin-top: 4px;
+    float:right;
+    font-size: 20px;
+}
+
+/*设置外部容器的样式*/
+.outer-pack{
+      /* 设置宽度 */
+      width: 100%;
+      /* 设置背景颜色 */
+      background-color: #E3E4E5;
+      height: 30px;
+      /* 设置行高，没有设置高度 使文字垂直居中 */
+      line-height: 30px;
+      /* 设置下边框 */
+      border-bottom: 1px #ddd solid
+}
+div{
+    display: block;
+}
+li{
+    
+    list-style: none;
+    color:#999;
+}
+a{
+    color:#999;
+    text-decoration: none;
+}
+a:hover{
+    color:#f10215;
+}
+
+/*设置内部容器的样式*/
+.inner-pack{
+  
+    height: 30px;
+    /* 固定宽度 */
+    width: 1190px;
+    /* 设置水平居中 */
+    margin: 0 auto;
+    position: relative;
+}
+
+ /*设置location*/
+.location{
+     float: left;
+ }
+ .R-list{
+   float:right;
+ }
+ .R-list li{
+     float: left;
+ }
+ /*设置分割线的样式*/
+.line{
+width: 1px;
+height: 10px;
+background-color: rgb(204, 202, 202);
+margin: 12px 12px 0;
+ }
+ /*设置城市列表的样式*/
+div.city-list{  
+    display: none;
+    width: 320px;
+    height: 436px;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+     /* 设置绝对定位，使其不占据页面的位置 */
+    position: absolute;
+    top:31px;
+    z-index: 999;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2)
+}
+/*设置鼠标移动到L-list时候让city-list显示*/
+.L-list:hover .city-list{
+    display: block;
+}
+.location{
+    padding:0 10px;
+    
+    position: relative;
+    z-index:9999;
+       
+}
+
+/*设置location移入时候的效果*/
+.location:hover{
+    background-color: white;
+    border:1px solid rgb(204, 204, 204);    
+    border-bottom: none;
+    padding-bottom: 1px;
+}
+.L-list.city-list{
+    position: relative;
+}
+.list1 li{  
+position: relative;
+  font-size: 12px;
+  float: left;
+  margin: 0px 14px;
+  
+  left:-31px;
+}
+.list1 li:hover{
+    background-color:#999;
+    color: #e1251b;
+}
+
+/*设置网站的log*/
+.log{
+    width: 192px;
+    height: 132px;
+    background-image: url(../source/log.jpg);
+    margin-left: 110px;
+    margin-top: 6px;
+}
+/*设置搜索框是样式*/
+.searchbox{
+    width: 772px;
+    height: 48px;
+    border: 2px solid red;
+    position: relative;
+    top:-110px;
+    left: 0;
+    margin-left: 350px;
+}
+.shopping:hover{
+    border:red
+}
+.shopping{
+    width: 189px;
+    height: 53px;
+    border:#999 1px solid;
+    position: relative;
+    margin-left: 1150px;
+    top:-163px;
+}
+.w{
+    position: relative;
+}
+.hotwords li{
+ display: inline;
+ position: relative;
+ left: 310px;
+ top:-176px;
+ font-size: 16px;
+ margin-right: 10px ;
+ font-family: 'Courier New', Courier, monospace;
+ 
+}
+.hotwords li:hover{
+    color: red;
+
+}
+.XDD{
+    width: 190px;
+    height: 120px;
+    background-image: url(../source/XDD.jpg);
+    position: relative;
+    left: 1300px;
+    top:-230px
+}
+.w{
+    height: 250px;
+   
+    position: relative;
+    top: -5px;
+  
+}
+.show li{
+    position: relative;
+    display: inline;
+    font-size: 16px;
+    margin: 0 20px;
+    left: 300px;
+    top:-18px
+}
+.show li:hover{
+    color:red;
+}
+.two{
+    border-bottom: 1px solid #999;
+}
+.below{
+    top:-11px;
+    margin-top: 0px;
+    position: relative;
+    /* background-color: #666666; */
+}
+/*设置左侧文字导航栏的样式*/
+.text-list{
+    width: 190px;
+    height: 470px;
+    background-color:#fff;
+    padding:10px 0;
+    border:1px solid wheat;
+    position: relative;
+    left: 45px;
+    top:13px;
+    
+}
+.text-list li{
+    line-height: 25px;
+    padding-left: 18px;
+    font-size: 14px;
+   
+   
+}
+
+.Rotation_pack {
+    /*设置图片的容器*/
+     width: 590px;
+    height: 491px;
+    margin: 100px auto;
+    background-image: url(../source/京东轮播图/8.jpg);
+    background-size: cover;
+    /*
+为ul开启相对定位，目的是使ul中的pointer可以相对于ul定位而不是相对于初始包含块（html）去定位
+*/
+    position: relative;
+    top:-578px;
+    left: -175px;
+    
+}
+.pointer {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: wheat;
+    border-radius: 50%;
+    position: relative;
+    margin:0 2px;
+    left: 290px;
+    top:-710px
+}
+.pointer:hover {
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+/*设置图片列表的样式*/
+.below .img-list{
+position: relative;
+top:-1186px;
+left: 910px;
+}
+.menu{
+    width: 200px;
+    height: 490px;
+    background-color: red;
+    float:right;
+    position: relative;
+    top:-1675px;
+    right: 179px;
+}
+.log1{
+  
+    height: 102px;
+    background-color:white;
+    border: 1px solid black;
+    position: relative;
+}
+.log2{
+    position: relative;
+    top:15px;
+    left: 23px;
+}
+.welcome>.heoll{
+    position: relative;
+    top:-30px;
+    left: 75px;
+}
+.welcome p{
+    position: relative;
+    left: 75px;
+    top:-40px
+}
+
+.welfare a{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius:13px;
+    background-color: #e1251b;
+    position: relative;
+    top:-40px;
+    left: 20px;
+
+}
+.a2:hover{
+    color:red
+}
+.a1:hover{
+    color:blue;
+
+}
+.news{
+    width: 198px;
+    height: 130px;
+    background-color:white;
+    position: relative;
+    border:1px solid black;
+    border-top: #999;
+
+    top:-33px
+}
+div.news-listss{
+    position: relative;
+    top:-30px;
+}
+.news-tag{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 12px;
+    vertical-align: 0;
+    text-align: center;
+    line-height: 16px;
+    color: #e1251b;
+    background-color: rgba(225,37,27,.08);
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+.box{
+    float: right;
+    font-size: 12px;
+    width: 140px;
+    white-space: nowrap;
+    /**/
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.box:hover{
+    color:red
+}
+.lcon{
+    position: relative;
+    width: 198px;
+    height: 255px;
+    background-color:white;
+    border: 1px solid black;
+    border-top: none;
+    top: -33px;
+}
+.little-lcon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+   
+}
+.lcon{
+    position: relative;
+}
+.lcon:hover{
+   color: red;
+}
+.imgs1,.imgs2,.imgs4,.imgs5,.imgs6,.imgs7,.imgs8,.imgs10{
+    float: left;
+    margin: 0px  15px;
+
+}
+.imgs3{
+    float: left;
+    margin: 0px  14px;
+    position: relative;
+    left: 8px;
+}
+
+.imgs9{
+    float: left;
+    margin: 0px  15px;
+    position: relative;
+    left: 8px;
+}
+.imgs11{
+    float: left;
+    margin: 0px  15px;
+    position: relative;
+    left: -5px;
+}
+.imgs12{
+    float: left;
+    margin: 0px  15px;
+    position: relative;
+    left: -4px;
+}

@@ -1,0 +1,23 @@
+body{
+    background-color: skyblue;
+}
+.img-list{
+    /*
+    设置ul的宽度和高度
+    */
+    width: 190px;
+    height: 470px;
+    margin: 50px auto;
+    /*裁剪溢出的内容*/
+    overflow: hidden;
+    background-color: #F4F4F4;
+}
+/*设置li的位置*/
+.img-list li:not(:last-child){
+    margin-bottom: 9px;
+}
+/*设置图片的大小*/
+.img-list img{
+    width: 100%;
+}
+/*设置图片列表的样式*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web用户注册</title>
+    <!---清除所有的默认样式-->
+    <link rel="stylesheet" href="/CSS 01/reset.css">
+    <!---引入本页面的CSS样式-->
+    <link rel="stylesheet" href="/practice/班级练习/Css/Demo01.css">
+
+
+</head>
+
+<body>
+    <!---外部的一个容器-->
+    <div class="outer-wrapper">
+        <!--内部的一个背景-->
+        <div class="inter-wrapper">
+            <div class="log">
+            </div>
+            <h1 class="title">用户注册</h1>
+            <form class="user">
+
+                用户名称：<input type="text" value="" placeholder="请输入您的用户名!" autofocus="autofocus" name="user_name">
+                <br><br><br>
+                登录密码：<input type="password" value="" placeholder="请输入您的密码！" name="user_password">
+                <br><br><br>
+                重复密码：<input type="password" value="" placeholder="请输入您的确认密码！">
+                <br><br><br>
+                电子邮箱：<input type="email" value="" autocomplete="off" placeholder="请输入您的邮箱！">
+                <br><br><br>
+                性别：<input class="sex" type="radio" checked="checked" name="sex" value="男">男
+                <input class="sex" type="radio" name="sex" >女
+                <br>
+                <br><br>
+                职业：&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" placeholder="学生" list="dlid">
+                <datalist id="dlid">
+                    <option value="学生"></option>
+                    <option value="老师"></option>
+                    <option value="程序员"></option>
+                    <option value="测试员"></option>
+                </datalist>
+                <br><br><br>
+                爱好:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" style="height: 150px; ">
+                 <br><br>
+           
+            </form>
+               <div class="btn">
+            <button type="submit">注册</button>
+            <button type="reset">重置</button>
+               </div>
+           
+        </div>
+        
+        <span class="tro">Copright @ 2020.戴尔扬州实训版权所有</span>
+
+    </div>
+
+</body>
+
+</html>

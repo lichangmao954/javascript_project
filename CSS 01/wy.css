@@ -1,0 +1,95 @@
+a{/*去除超链接的下划线*/
+    text-decoration:none;
+}
+
+/*给整个容器设定一个样式*/
+.wangyi-span{
+    width: 300px;
+    height: 357px;
+    /*设置容器居中  为了观察*/
+    margin: 50px auto;
+ /* 设置背景颜色，显示轮廓 */
+ background-color: #fff;
+     /*设置上边框*/
+    border-top:1px solid #ddd
+    
+}
+/*设置新闻的标题格式*/
+.news-title{
+ /* 为了边框和文字宽度一致，需要将h2转换为行内块元素 */
+ display: inline-block;
+ /*设置高度*/
+ height: 30px;
+ /*设置一个上边框*/
+ border-top:2   px red solid
+  /* 通过margin-top将h1上移，盖住上边框 */
+  margin-top  -1px;
+
+  padding-top:  10px;
+}
+
+ 
+
+
+.news-title a{/*设置超链接的样式*/
+
+/* 设置颜色 */
+            color: #40406B;
+            /* 设置文字的加粗效果 */
+            font-weight: bold;
+}
+/*设置图片容器的高度*/
+.img-span{
+    height: 150px;
+}
+
+/*设置图片文字的效果*/
+.img-span h2{
+     /* 向上移动文字 */
+     margin-top: -30px;
+     /* 设置字体颜色 */
+     color: #fff;
+     /* 设置加粗 */
+     font-weight: bold;
+     /* 设置padding */
+     padding-left: 30px;
+}
+
+/*设置新闻列表的样式*/
+.news-span{
+     /* 设置上外边距 */
+     margin-top: 20px;
+     /* 设置左侧的padding */
+     /* padding-left: 14px; */
+     
+     /* 设置项目符号 */
+     /* list-style: square; */
+
+}
+/*设置li的样式*/
+.news-span>li{
+    /* 设置字体大小 */
+    font-size: 14px;
+    /* 设置字体颜色 */
+    color: #666;
+     /*设置下外边距  */
+     margin-bottom: 17px;
+}
+
+
+/*设置超链接的移入样式*/
+.news-span a:hover{
+
+color: red;
+}
+.news-span a{
+    color: #666;
+    
+}
+/* 通过before伪元素，来为每一个li添加项目符号 */
+.news-list li::before{
+    content: '■';
+    color: rgb(218, 218, 218);
+    font-size: 12px;
+    margin-right: 4px;
+}

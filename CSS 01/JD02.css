@@ -1,0 +1,40 @@
+body{
+    background-color: #bfa
+}
+.text-list{/*设置菜单的外部样式*/
+    width: 190px;
+    height: 470px;
+    background-color:#fff;
+    padding:10px 0;
+    margin:50px auto;
+}
+ li{/*设置菜单的内部样式*/
+    height: 25px;
+    /* 要让一个文字在父元素中垂直居中，只需将父元素的line-height设置为一个和父元素height一样的值 */
+    line-height: 25px;
+    /* 设置item的右内边距，将文字向内移动  */
+    padding-left: 18px;
+    /* 设置字体大小 */
+    font-size: 12px;
+
+ }
+ li:hover{
+    background-color: #d9d9d9;
+ }
+ span{/*设置/的距离*/
+    padding: 0 2px;
+
+ }
+ a:hover{/*为超链接设置一个移动进入的样式*/
+
+    background-color: #c81623
+
+ }
+ a{
+      /* 设置字体大小 */
+      font-size: 10px;
+      /* 设置字体的颜色 */
+      color: #333;
+      /* 去除下划线 */
+      text-decoration: none;
+ }

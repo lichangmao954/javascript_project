@@ -1,0 +1,160 @@
+.w,
+.secnav,
+.imgwelcome,
+.midlocation,
+h1,
+.gameinfo {
+  width: 2014px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.outwrapper {
+  width: 100%;
+}
+.outwrapper .topnav {
+  height: 162px;
+  background-color: #191919;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  line-height: 162px;
+  justify-content: space-between;
+}
+.outwrapper .topnav .leftpicture i {
+  color: yellow;
+}
+.outwrapper .topnav .midcontent {
+  display: flex;
+}
+.outwrapper .topnav .midcontent li {
+  margin: 0 20px;
+}
+.outwrapper .topnav .rightindex {
+  display: flex;
+}
+.outwrapper .topnav .rightindex li {
+  margin: 0 20px;
+}
+.outwrapper .topnav .rightindex li button {
+  border-radius: 10px;
+  font-size: 40px;
+  color: white;
+  background-color: #191919;
+}
+.secnav {
+  display: flex;
+  height: 96px;
+  line-height: 96px;
+  color: black;
+  font-size: 20px;
+  justify-content: space-between;
+}
+.secnav a {
+  color: black;
+  display: block;
+}
+.secnav a:hover {
+  color: red;
+}
+.secnav .leftbox {
+  display: flex;
+}
+.secnav .leftbox li {
+  margin: 0 20px;
+}
+.secnav .rightbox {
+  display: flex;
+}
+.secnav .rightbox li {
+  margin: 0 20px;
+}
+.secnav .rightbox li li .heightlight {
+  color: yellow;
+}
+.secnav .rightbox li input {
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  border-color: yellow;
+}
+.secnav .rightbox li i {
+  font-size: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 24px;
+  background-color: yellow;
+  border-radius: 10px;
+  margin-left: -15px;
+  border-left: none;
+}
+.imgwelcome {
+  height: 168px;
+  background-image: url("../img/作业3/WeGame游戏商店.png");
+  background-position: -570px;
+  background-repeat: no-repeat;
+}
+.midlocation {
+  height: 888px;
+  margin-top: 50px;
+}
+.midlocation .centerlocation {
+  background-color: #191919;
+  position: relative;
+}
+.midlocation .centerlocation .picture {
+  height: 770px;
+  background-image: url("../img/作业3/WeGame游戏商店1.png");
+  background-repeat: no-repeat;
+}
+.midlocation .centerlocation .text {
+  margin-left: -23px;
+  line-height: 115px;
+  font-size: 40px;
+  width: 433px;
+  float: right;
+  position: absolute;
+  top: 0px;
+  left: 1600px;
+  color: white;
+}
+.midlocation .centerlocation .text .highlight {
+  background-color: #754923;
+}
+h1 {
+  font-size: 50px;
+}
+.gameinfo {
+  height: 803px;
+}
+.gameinfo .timeline {
+  font-size: 50px;
+  display: flex;
+  line-height: 134px;
+  justify-content: space-around;
+  border-bottom: 10px solid orangered;
+}
+.gameinfo .pictureslink {
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-around;
+}
+.gameinfo .pictureslink .pic1 {
+  width: 372px;
+  margin-left: 50px;
+}
+.gameinfo .pictureslink .pic1 .img1 img {
+  width: 300px;
+}
+.gameinfo .pictureslink .pic1 h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 10px;
+}
+.gameinfo .pictureslink .pic1 .desc {
+  font-size: 20px;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=Demo12.css.map */

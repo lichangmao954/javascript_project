@@ -1,0 +1,34 @@
+a{/*取消超链接的下划线*/
+    text-decoration :none;
+}
+.box{
+    height: 48px;
+    width: 1162px;
+    background-color: #E8E7E3;
+    margin: 100px auto;
+   
+}
+.box li{
+    /* 设置li向左浮动，已使菜单横向排列 */
+    float: left;
+      /* 设置li的高度 */
+            /* height: 48px; */
+            /* 将文字在父元素中垂直居中 */
+    line-height: 48px;
+}
+.box ul a{
+    display: block;
+     /* 设置字体颜色 */
+     color: #777777;
+     /* 修改字体大小 */
+     font-size: 17px;
+
+     padding: 0 39px;
+}
+.box li :last-child a{
+    padding: 0 42px 0 41px;
+}
+a:hover{
+    background-color: #3F3F3F;
+            color: #E8E7E3;
+}

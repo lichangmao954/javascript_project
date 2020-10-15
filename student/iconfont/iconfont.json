@@ -1,0 +1,156 @@
+{
+  "id": "2053906",
+  "name": "ai'li",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4412616",
+      "name": "退出",
+      "font_class": "tuichu1",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "2534902",
+      "name": "退出 (1)",
+      "font_class": "tuichu",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "15252726",
+      "name": "密 码",
+      "font_class": "mima",
+      "unicode": "e89f",
+      "unicode_decimal": 59551
+    },
+    {
+      "icon_id": "5377851",
+      "name": "戴尔",
+      "font_class": "daier",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "4902387",
+      "name": "分割线",
+      "font_class": "PartingLine",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "3586608",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "797983",
+      "name": "f",
+      "font_class": "f",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "714648",
+      "name": "话费",
+      "font_class": "qixian1",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "2693816",
+      "name": "以旧换新",
+      "font_class": "yijiuhuanxin",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "9365109",
+      "name": "电话卡",
+      "font_class": "dianhuaka",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "10540353",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "11931033",
+      "name": "时间 历史记录 计时 钟表 线性",
+      "font_class": "shijianlishijilujishizhongbiaoxianxing",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "880429",
+      "name": "扳手",
+      "font_class": "editor2",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "4237011",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "10965379",
+      "name": "个人中心",
+      "font_class": "renwu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "14596924",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "3234880",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "10997405",
+      "name": "search",
+      "font_class": "-search",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4944156",
+      "name": "购物车",
+      "font_class": "gouwuche1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13181517",
+      "name": "search",
+      "font_class": "search1",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "15175971",
+      "name": "购物 车",
+      "font_class": "gouwuche",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    }
+  ]
+}

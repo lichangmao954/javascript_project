@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var num = prompt("请输入一个大于1的整数")
+        var flag = true;
+        if (num <= 1) {
+            alert("你的输入不合法！")
+        } else {
+            for (var i = 2; i < num; i++) {
+                //判断num是否被i整除
+                if (num % i == 0) {
+                    flag = false
+
+                }
+            }
+            if (flag) {
+                alert(num + "是质数！")
+            } else {
+                alert(num + "不是质数！")
+            }
+
+        }
+    </script>
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>

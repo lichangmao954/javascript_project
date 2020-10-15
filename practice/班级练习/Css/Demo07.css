@@ -1,0 +1,32 @@
+body {
+  background-color: #789c2a;
+  perspective: 2000px;
+}
+.wrapper div {
+  position: absolute;
+}
+.wrapper {
+  transform-origin: 0 0;
+  margin-top: 80px;
+  width: 1200px;
+  height: 700px;
+  transform-style: preserve-3d;
+}
+.wrapper img {
+  width: 400px;
+  height: 500px;
+  margin-left: 480px;
+}
+.wrapper .img-wrapper {
+  transform-origin: 0 0;
+  transform: rotateY(-50deg);
+}
+.wrapper .text-wrapper {
+  vertical-align: top;
+  margin-left: 480px;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  font-size: 30px;
+  font-family: 楷体;
+}

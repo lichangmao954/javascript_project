@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习一</title>
+    <link rel="stylesheet" href="../../CSS 01/reset.css">
+    <style>
+        p {
+            height: 27px;
+            font-size: 16px;
+            color: white;
+            background: rgba(92, 91, 91, 0.4);
+        }
+
+        .img-pack1 p {
+            position: relative;
+            top: 174px
+        }
+        p.pa{
+            position: relative;
+            top:175px;
+            
+        }
+        p.pb{
+            position: relative;
+            top:380px;
+        }
+
+        .clearfix::after,
+        .clearfix::before {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        .img-pack1 {
+            width: 365px;
+            height: 610px;
+            float: left;
+            margin-left: 300px;
+            margin-top: 50px;
+
+        }
+
+        .img-pack2 {
+            width: 365px;
+            height: 610px;
+            float: left;
+            margin-top: 50px;
+
+        }
+
+        .img1 {
+            width: 360px;
+            height: 203px;
+            background-image: url(../背景/img/1.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .img2 {
+            width: 360px;
+            height: 203px;
+            background-image: url(../背景/img/2.jpg);
+            margin: 5px 0px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+        }
+
+        .img3 {
+            width: 360px;
+            height: 203px;
+            background-image: url(../背景/img/3.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .img4 {
+            width: 360px;
+            height: 203px;
+            background-repeat: no-repeat;
+            background-image: url(../背景/img/4.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .img5 {
+            width: 360px;
+            height: 407px;
+            background-repeat: no-repeat;
+            background-image: url(../背景/img/5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    < <div class="img-pack1">
+        <div class="img1">
+            <p class="img_left"><span style="margin-left:50px; ">燕赵遍地有古塔</span></p>
+        </div>
+        <div class="img2">
+            <p class="img_left clearfix"><span style="margin-left:50px;">解读贵州岩画</span></p>
+        </div>
+        <div class="img3">
+            <p class="img_left"><span style="margin-left:50px;">乾陵：天下第一陵</span></p>
+        </div>
+        </div>
+        <div class="img-pack2">
+            <div class="img4">
+                <p class="pa"><span style="margin-left:50px;">磴口：正在上演的地质史诗</span></p>
+            </div>
+            <div class="img5">
+                <p class="clearfix pb"><span style="margin-left:50px;">大江寻源</span></p>
+            </div>
+        </div>
+</body>
+
+</html>

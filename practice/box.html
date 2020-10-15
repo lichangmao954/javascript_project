@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        div {
+            font-size: 20px;
+
+        }
+
+        .outer {
+            /*
+             盒子内容区的宽度和高度
+             */
+            width: 800px;
+            height: 200px;
+            background-color: skyblue;
+            /*
+          盒子边框的属性：边框的宽度、颜色、风格*/
+
+            border: 10px yellow double;
+
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            /*元素水平方向的布局
+            元素在其父元素中水平方向的位置由以下几个元素共同决定
+             margin-left
+             border-left
+             border-left
+             width
+             padding-right
+             border-right
+             margin-right
+
+             一个元素在其父元素中必须满足一下等式
+
+子元素的： margin-left+border-left+padding-left+width+padding-right+border-right+margin-right = 其父元素内容区的宽度 （必须满足）
+
+            
+            */
+           margin-left: auto;
+           margin-right: auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+
+    </div>
+</body>
+
+</html>

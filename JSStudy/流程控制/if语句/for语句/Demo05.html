@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //测试程序的性能
+        console.time("test");
+        for (var i = 2; i <= 100000; i++) {
+            var flag = true;
+            for (var j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) {
+                console.log(i);
+            }
+        }
+        //终止计时器
+        console.timeEnd("test");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

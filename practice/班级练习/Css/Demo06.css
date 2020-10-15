@@ -1,0 +1,101 @@
+.background-wrapper{
+    width: 20000px;
+    height: 600px;
+    margin: 50px auto;
+    background-image: url(/practice/班级练习/img/西游记/bac.webp);
+   
+    position: relative;
+    animation: backgroundrun 60s infinite;
+   
+}
+
+.four-man{
+     display: flex;
+    width: 2000px;
+    height: 200px;
+   
+    position: absolute;
+    top: 360px;
+}
+
+.monkey{
+    margin-left: 300px;
+    width: 200px;
+    height: 180px;
+    background-image: url(/practice/班级练习/img/西游记/west_01.png);
+    animation: monkeyrun 1s  steps(8) infinite;
+}
+
+.pig{
+    width: 200px;
+    height: 180px;
+    background-image: url(/practice/班级练习/img/西游记/west_02.png);
+    animation: monkeyrun 1s  steps(8) infinite;
+
+}
+
+.Tang{
+    width: 170px;
+    height: 200px;
+    background-image: url(/practice/班级练习/img/西游记/west_03.png);
+    animation: TangMonkrun  1s  steps(8) infinite;
+}
+.sha{
+    width: 210px;
+    height: 200px;
+    background-image: url(/practice/班级练习/img/西游记/west_04.png);
+    animation:  sharun 1s  steps(8) infinite;
+
+
+}
+
+@keyframes monkeyrun{
+    from{
+         background-position: 0 0;
+    }
+
+    to{
+        background-position: -1600px 0;
+    }
+}
+@keyframes pigrun{
+    from{
+        background-position: 0 0;
+   }
+
+   to{
+       background-position: -1600px 0;
+   }
+  
+}
+
+
+@keyframes TangMonkrun{
+    from{
+         background-position: 0 0;
+    }
+
+    to{
+        background-position: -1360px 0;
+    }
+}
+
+
+@keyframes sharun{
+    from{
+         background-position: 0 0;
+    }
+
+    to{
+        background-position: -1680px 0;
+    }
+}
+
+@keyframes backgroundrun{
+    from{
+       background-position: 0 0;
+    }
+    to{
+          background-position: 2000px 0;
+    }
+}

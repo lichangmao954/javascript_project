@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .Box{
+        width: 660px;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+    .kuai,
+    .ss{
+        width: 200px;
+        height: 200px;
+        background: hotpink;
+        float: left;
+        margin: 10px;
+    }
+    .ss{
+        text-align: center;
+        line-height: 200px;
+    }
+
+    </style>
+</head>
+<body>
+<div class="Box">
+    <div class="kuai"></div>
+    <div class="kuai"></div>
+    <div class="kuai"></div>
+    <div class="kuai"></div>
+    <div class="ss">
+        <button id="ks">开始</button>
+        <button "stop()">停止</button>
+    </div>
+    <div class="kuai"></div>
+    <div class="kuai"></div>
+    <div class="kuai"></div>
+    <div class="kuai"></div>
+</div>
+//这里使用div来布局
+    
+</body>
+<script type="text/javascript"> 
+    var div = document.getElementsByClassName('kuai')
+    //获取除去中间的其余8个div（数组形式）
+    var arr = [0,1,2,4,7,6,5,3]
+    **//这是实现顺时针旋转的关键
+    //上面获取到了8个div，并且是数组形式，所以这个数组来存放我们想要变色的div所对应的索引**
+    var num = 0   //设置一个空值 
+    var a = 0   //设置一个用来自增的空值
+    var timer = null  //方便计时器开始与结束
+        ks.onclick = function  (){
+            clearInterval(timer)     //在开启一个计时器之前关闭一个，这样就不会造成点击多代码执行时间加速问题
+           timer = setInterval(function(){
+            num = arr[a]  //将数组arr的每个索引对应的值赋予num
+            for (var i = 0; i < arr.length; i++) {
+                div[i].style.background = "hotpink"  //先给所有div设置统一背景色
+            };
+            div[num].style.background = "blue" //再设置索引为num的div为其他颜色
+            a++    //使a自增    所以每次num的值都会按照arr的内容变化，达到顺时针的效果
+            if (a==arr.length) {
+                  a = 0    
+            };//判断让转盘首尾连接
+        },50)    };
+        function stop () {
+            if (timer != null) {
+            clearInterval(timer)
+    }}   //用来清除计时器
+</script>
+</html>

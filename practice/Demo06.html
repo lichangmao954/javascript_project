@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奥运五环</title>
+</head>
+<style>
+  
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: relative;
+     
+
+    }
+
+    .box1 {
+
+          z-index: 1; 
+        border: 10px solid blue;
+    
+        float: left;
+        margin-left: 400px;
+        left: 53px;
+        box-shadow: 50px 0px 100px skyblue;
+
+
+
+    }
+
+    .box2 {
+        z-index: 1; 
+        border: 10px solid black;
+        float: left;
+        left: 50px;
+        box-shadow: 50px 0px 100px rgb(67, 68, 68);
+
+
+
+
+    }
+
+    .box3 {
+         
+        border: 10px solid red;
+        float: left;
+        left: 50px;
+        box-shadow: 50px 0px 100px rgb(235, 135, 135);
+
+    }
+
+    .box4 {
+        z-index: 1; 
+        border: 10px solid yellow;
+        clear: both;
+        left: 560px;
+        top: -130px;
+        
+    }
+
+    .box5 {
+       
+        border: 10px solid green;
+        clear: both;
+        left: 780px;
+        top: -350px;
+    
+    }
+</style>
+
+<body>
+    <div class="outer">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="inner">
+        <div class="box4"></div>
+        <div class="box5"></div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件夹管理</title>
+    <style>
+        html {
+            perspective: 2000px;
+        }
+
+        .wrapper {
+            width: 400px;
+            height: 300px;
+            background-color: #bfa;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer {
+            height: 160px;
+            width: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .outer div {
+            position: absolute;
+        }
+
+        .One {
+            width: 50px;
+            height: 150px;
+            background-color: #9a6e3a;
+            border-radius: 20px;
+        }
+
+        .Two, .Three, .four, .five, .six {
+            top: 10px;
+            width: 200px;
+            height: 150px;
+            transform-origin: right bottom;
+        }
+
+        .Two {
+            background-color: red;
+        }
+
+        .Three {
+            background-color: yellow;
+        }
+
+        .four {
+            background-color: #1bc4fb;
+        }
+
+        .five {
+            background-color: green;
+        }
+
+        .six {
+            background-color: greenyellow;
+        }
+
+        .outer:hover .six {
+            transform: rotateX(-45deg);
+        }
+
+        .outer:hover .Two {
+            left: 20px;
+            transform: rotatez(10deg);
+        }
+
+        .outer:hover .Three {
+            left: 20px;
+            transform: rotatez(20deg);
+        }
+
+        .outer:hover .four {
+            left: 20px;
+            transform: rotateZ(30deg);
+        }
+
+        .outer:hover .five {
+            left: 20px;
+            transform: rotateZ(40deg);
+        }
+
+        .outer:hover {
+            transform-origin: left bottom;
+            transform: rotateY(20deg);
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="outer">
+        <div class="One"></div>
+        <div class="Two"></div>
+        <div class="Three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+    </div>
+</div>
+</body>
+</html>

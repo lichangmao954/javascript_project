@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           .outer-wrapper{
+               display: table;
+               width: 800px;
+               height: 800px;
+               background-color: black;
+               margin: 50px auto;
+               border-radius: 20px;
+               position: relative;
+              
+           }
+           .maxradius{
+               display: table;
+               width: 400px;
+               height: 400px;
+               background-color: #EEEE;
+               border-radius: 50%;
+               vertical-align: middle;
+               position: absolute;
+               left: 200px;
+               top: 200px;
+           }
+           .oneradius{
+               width: 200px;
+               height: 200px;
+               border: 10px solid #4db6ac;
+               border-radius: 50%;
+               position: absolute;
+               left: 85px;
+               top:90px;
+           }
+        
+
+    </style>
+</head>
+<body>
+    <!---外部的容器-->
+    <div class="outer-wrapper">
+        <div class="maxradius">
+            <div class="oneradius"></div>
+            <div class="tworadius"></div>
+          <div class="threeradius"></div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

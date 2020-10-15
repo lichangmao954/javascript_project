@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.toString = function () {
+            return "Person [name=" + this.name + "age=" + this.age + "]";
+        };
+        //创建一个person对象
+        var person = new Person("孙悟空", 18);
+        var person2 = new Person("张三", 28);
+        var person3 = new Person("孙", 25);
+        var person4 = new Person("孙空", 17);
+        var person5 = new Person("空", 36);
+
+        var array = [person, person2, person3, person4, person5];
+
+        /*
+        * 创建一个函数将数组中满18岁的Person提取出来，然后封装到一个新的数组中并且返回
+        * */
+        function getAudlt(arr) {
+            //创建新的数组
+            var newArray = []
+            //遍历数组array
+            for (var i = 0; i < array.length; i++) {
+                var p = array[i];
+
+                //判断Person对象的age是否大于18
+                if (p.age >= 18) {
+                    //如果大于18岁，则将这个对象添加到newArray中
+                    newArray.push(p);
+                }
+            }
+            //将新的数组返回
+            return newArray;
+        }
+
+        var result = getAudlt(array);
+        console.log(result);
+       var date =new Date();
+       console.log(date);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

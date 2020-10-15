@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>桃心</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .heart-body {
+            width: 500px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .heart-shape {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #f70e0e;
+            transform: rotate(45deg);
+        }
+
+        .heart-shape:before,
+        .heart-shape:after {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+            background-color: #f70e0e;
+        }
+
+        .heart-shape:before {
+            left: -45px;
+        }
+
+        .heart-shape:after {
+            top: -45px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="heart-body">
+    <div class="heart-shape"></div>
+</div>
+
+</body>
+</html>

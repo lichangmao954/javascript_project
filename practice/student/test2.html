@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等待页面</title>
+    <script >
+        function getLable(id){
+            return document.getElementById(id);
+        }
+
+        function changeSec(){
+            //得到span的值，每秒减一，会进行隐士转换
+            getLable('myspan').innerText=getLable('myspan').innerText-1;
+        }
+
+        var mytime = setInterval("ChangeSec()",1000);
+
+        //五秒后跳转
+        function  tiao(){
+            clearInterval(mytime);
+            window.location.href="./test3.html"
+        }
+
+        setTimeout("tiao()",5000);
+    </script>
+</head>
+<body>
+      登录成功，<span id="myspan">5</span>秒后自动跳转到管理页面
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico">
+    <title>学生档案管理系统</title>
+    <style>
+        body {
+            height: 800px;
+            background-image: url("./img/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        function getLable(id) {
+            return document.getElementById(id);
+        }
+
+        function changeSec() {
+            //得到span的值，每秒减一，会进行隐士转换
+            getLable('myspan').innerText = getLable('myspan').innerText - 1;
+        }
+
+        var mytime = setInterval("ChangeSec()", 1000);
+
+        //五秒后跳转
+        function tiao() {
+            clearInterval(mytime);
+            window.location.href = "./index2.html"
+        }
+
+        setTimeout("tiao()", 1000);
+    </script>
+</head>
+<body>
+登录成功，<span id="myspan">2</span>秒后自动跳转到主页面
+
+</body>
+</html>

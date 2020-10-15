@@ -1,0 +1,212 @@
+// 通用样式
+.w {
+  width: 2014px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+// 外层容器样式
+.outwrapper {
+  width: 100%;
+  // 顶部导航条
+  .topnav {
+    height: 162px;
+    background-color: #191919;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    line-height: 162px;
+    justify-content: space-between;
+
+    .leftpicture {
+      i {
+        color: yellow;
+      }
+    }
+
+    // 中间内容
+    .midcontent {
+      display: flex;
+
+      li {
+        margin: 0 20px;
+      }
+    }
+
+    // 右侧引导
+    .rightindex {
+      display: flex;
+
+      li {
+        margin: 0 20px;
+
+        button {
+          border-radius: 10px;
+          font-size: 40px;
+          color: white;
+          background-color: #191919;
+        }
+      }
+    }
+  }
+}
+
+
+// 第二层导航条
+.secnav:extend(.w) {
+  display: flex;
+  height: 96px;
+  line-height: 96px;
+  color: black;
+  font-size: 20px;
+  justify-content: space-between;
+
+  a {
+    color: black;
+    display: block;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  // 左侧盒子
+  .leftbox {
+    display: flex;
+
+    li {
+      margin: 0 20px;
+    }
+  }
+
+  // 右侧盒子
+  .rightbox {
+    display: flex;
+
+    li {
+      margin: 0 20px;
+
+      li .heightlight {
+        color: yellow;
+      }
+
+      input {
+        width: 200px;
+        height: 20px;
+        border-radius: 10px;
+        border-color: yellow;
+      }
+
+      i {
+        font-size: 20px;
+        margin-top: 10px;
+        display: inline-block;
+        width: 30px;
+        height: 24px;
+        background-color: yellow;
+        border-radius: 10px;
+        margin-left: -15px;
+        border-left: none;
+        // margin-top: 2px;
+        // border: yellow solid 1px;
+
+      }
+    }
+  }
+
+}
+
+// 欢迎图
+.imgwelcome:extend(.w) {
+  height: 168px;
+  background-image: url("../img/作业3/WeGame游戏商店.png");
+  background-position: -570px;
+  background-repeat: no-repeat;
+}
+
+// 轮播栏目
+.midlocation:extend(.w) {
+  height: 888px;
+  // background-color:blue;
+  margin-top: 50px;
+
+  .centerlocation {
+    // height: 774px;
+    // display: flex;
+    background-color: #191919;
+    position: relative;
+
+    .picture {
+      height: 770px;
+      background-image: url("../img/作业3/WeGame游戏商店1.png");
+      background-repeat: no-repeat;
+    }
+
+    .text {
+      margin-left: -23px;
+      line-height: 115px;
+      font-size: 40px;
+      width: 433px;
+      float: right;
+      position: absolute;
+      top: 0px;
+      left: 1600px;
+      color: white;
+
+      .highlight {
+        background-color: #754923;
+      }
+    }
+  }
+
+}
+
+h1:extend(.w) {
+  font-size: 50px;
+}
+
+
+.gameinfo:extend(.w) {
+  // background-color: green;
+  height: 803px;
+  // 时间线
+  .timeline {
+    font-size: 50px;
+    display: flex;
+    line-height: 134px;
+    justify-content: space-around;
+    border-bottom: 10px solid orangered;
+  }
+
+  // 对应的图片
+  .pictureslink {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-around;
+
+    .pic1 {
+      width: 372px;
+      margin-left: 50px;
+
+      .img1 {
+        img {
+          width: 300px;
+        }
+      }
+
+      h2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 10px 10px;
+      }
+
+      .desc {
+        font-size: 20px;
+        margin: 0 10px;
+      }
+    }
+  }
+}

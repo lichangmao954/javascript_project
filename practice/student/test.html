@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <script type="text/javascript" >
+    function getValue(id){
+        return document.getElementById(id).value;
+    }
+    function checkuser(){
+        if(getValue('username')=="lcm" &&getValue('password')=="123456"){
+            return true;
+        }
+        else{
+            alert("用户名或密码输入错误！")
+            return false;
+        }
+    }
+
+    </script>
+  
+</head>
+<body>
+      <form action="test2.html">
+        用户名：<input type="text" id="username"/><br>
+        密码：<input type="password" id="passwprd"/><br>
+        <input type="submit" value="登录" onclick=" return checkuser()"/>
+
+    </form>
+</body>
+</html>

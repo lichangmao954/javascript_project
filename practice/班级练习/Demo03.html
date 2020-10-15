@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唱片</title>
+    <style>
+        body{
+            position: relative;
+        }
+        .line{
+            width: 10px;
+            height: 400px;
+            background-color: black;
+            margin: 0 50px;
+            float: left;
+            margin-right: 0;
+
+           
+            
+        }
+        .outer-wrapper{
+
+            width: 400px;
+            height: 400px;
+            background-color: #bfa;
+            float: left;
+            border-radius: 50%;
+            background-image: url(/practice/班级练习/img/唱片机.jpg);
+            background-size: cover;
+            /*设置动画*/
+            animation: sing  10s  linear infinite;
+             
+
+ 
+        }
+
+        /*设置动画关键帧*/
+        @keyframes  sing{
+            from{
+                transform:rotate(0)
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .play{
+            position: absolute;
+              left: 100px;
+              top:410px
+        }
+          
+        
+    </style>
+     
+</head>
+
+<body>
+    <div class="line"></div>
+
+    <div class="outer-wrapper">
+    </div>
+    <div class="play">
+        <audio controls="controls">
+            <source src="/practice/班级练习/img/潇公子（刘潇） - 兄弟想你了（完整版）.flac">
+        </audio>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <title>学生档案管理系统</title>
+    <script>
+        function getValue(id) {
+            return document.getElementById(id).value;
+        }
+
+        function checkuser() {
+            if (getValue('username') == "lcm" && getValue('password') == "123456") {
+                return true;
+            } else {
+                alert("用户名或密码输入错误！")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="top-bar">
+        <i class="iconfont icondaier   "></i>
+        <span>戴尔扬州训练营</span>
+        <h1>学生档案管理系统</h1>
+    </div>
+    <div class="form-list">
+        <form class="sign_in" action="./getinto.html">
+            <h2>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</h2>
+            <div class="border"></div>
+            <table cellpadding="0" cellspacing="20" border="0" align="center">
+                <tr>
+                    <td valign="middle" align="right">
+                        用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名:
+                    </td>
+                    <td valign="middle" align="left">
+                        <input type="text" name="username" id="username"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="middle" align="right">
+                        密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+                    </td>
+                    <td valign="middle" align="left">
+                        <input type="password" name="password" id="password"/>
+                    </td>
+                </tr>
+            </table>
+            <div class="last" align="center">
+                <input type="submit" class="button" value="登陆" onclick="return checkuser()"/>
+                &nbsp &nbsp
+                <input type="button" class="button" value="注册" onclick="location='index3.html'"/>
+                &nbsp &nbsp
+                <input type="reset" name="reset" value="重置"/>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+</body>
+</html>
